@@ -8,6 +8,11 @@
 # Data: simulated_heights
 # ---------------------------------------------------
 
+# load libraries
+library("ggplot2")
+library("dplyr")
+library("janitor")
+
 # import data
 height <- readr::read_csv("./data/sim_heights.csv")
 
@@ -38,7 +43,7 @@ var(z)
 # --- 2(d) ---
 
 # plot ECDF of x
-ggplot(tibble(x), aes(x)) +
+ggplot(data.frame(x), aes(x)) +
   stat_ecdf(geom = "step", col = "steelblue", linewidth = 1) +
   labs(
     x = "Height (X)",
@@ -52,7 +57,7 @@ ggplot(tibble(x), aes(x)) +
 # ---------------------------------------------------
 
 # get data
-freedom <- readr::read_csv("../data/freedom.csv")
+freedom <- readr::read_csv("./data/freedom.csv")
 
 # prepare data
 freedom_2020 <- freedom %>%

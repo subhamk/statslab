@@ -5,6 +5,12 @@
 # Some codes have been slightly modified
 # Data from from tidytuesday
 
+
+# load libraries
+library("ggplot2")
+library("dplyr")
+library("janitor")
+
 # ---------------------------------------------------
 # FIFA World Cup Matches 
 # ---------------------------------------------------
