@@ -10,7 +10,7 @@
 # ---------------------------------------------------
 
 # Import data
-wcmatches <- readr::read_csv("../data/wcmatches.csv")
+wcmatches <- readr::read_csv("./data/wcmatches.csv")
 
 # get a snapshot of the data
 head(wcmatches)   # prints first few lines
@@ -91,7 +91,7 @@ wcmatches %>%
 # Graphical Description
 # ---------------------------------------------------
 
-pwt2018 <- readr::read_csv("../data/pwt2018.csv")
+pwt2018 <- readr::read_csv("./data/pwt2018.csv")
 
 # histogram of per capita GDP
 ggplot(data = pwt2018, aes(pcgdp)) +
@@ -132,7 +132,7 @@ ggplot(data = pwt2018, aes(pcgdp)) +
 # Numerical Summaries
 # ---------------------------------------------------
 
-pwt_2000_2019 <- readr::read_csv("../data/pwt_2000_2019.csv") 
+pwt_2000_2019 <- readr::read_csv("./data/pwt_2000_2019.csv") 
 
 # average per capita gdp
 pwt_2000_2019 %>%                           # PWT dataset

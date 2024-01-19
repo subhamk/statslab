@@ -4,7 +4,7 @@
 # Any changes you make here will be lost once you exit
 
 # get data
-lcf <- readr::read_csv("../data/lcf.csv")
+lcf <- readr::read_csv("./data/lcf.csv")
 
 attach(lcf)
 

@@ -9,7 +9,7 @@
 # ---------------------------------------------------
 
 # import data
-height <- readr::read_csv("../data/sim_heights.csv")
+height <- readr::read_csv("./data/sim_heights.csv")
 
 x <- height$x   # x is a vector of heights
 
